@@ -1,1 +1,8 @@
+from org.bukkit.plugin.java import JavaPlugin
 
+class MyPythonPlugin(JavaPlugin):
+    def onEnable(self):
+        self.getLogger().info("Python Plugin Activated!")
+    
+    def onDisable(self):
+        self.getLogger().info("Python Plugin Deactivated!")
